@@ -1,0 +1,30 @@
+A feladat egy olyan RUBY program elkészítése, ami összeadást, szorzást és maximumot tud számolni adott bemeneti értékekre. 
+A program egy fájlból olvassa be a számításhoz szükséges adatokat. 
+A bemeneti fájl alakja a következo:
+
+f1, max, inputok: 10 2 4
+f2, sum, inputok: 2 f1 5
+f3, prod, inputok: 6 f2
+f4, max, inputok: f2 f3 6 123
+
+Minden sorban egy számítás adatai vannak megadva, eloszor a neve, ami mindig egy “f” betu és egy sorszám, 
+majd az elvégzendo muvelet, végül az input adatok, amikre ki kell számolnunk a muvelet eredményét(ezek között lehet elozoleg kiszámolt eredmény is). 
+Az egyes részek vesszovel és SPACE(ek)-el (azaz a vesszo után lehet több SPACE is), míg az input adatok SPACE-ekkel vannak elválasztva 
+(esetleg a sor végén is lehetnek további SPACE-ek).
+
+A fent megadott adatokból egy olyan fájlt (a neve mindig legyen eredmeny.txt) kell elkészíteni, ami tartalmazza a kiszámolt értékeket a következo alakban:
+
+f1 = 10
+f2 = 17
+f3 = 102
+f4 = 123
+
+Azaz minden sor egy kiszámolt értéket ír le, megadva a számításhoz adott nevet és egyenloségjelet követoen a kiszámolt értéket. 
+Az ellenorizhetoség miatt az egyenloségjel mindkét oldalán pontosan egy SPACE kell álljon.
+
+További követelmények.
+
+    A bemeneti fájl a program parancssori paramétere legyen.
+    A kimeneti fájl neve mindig legyen “eredmeny.txt”.
+    Hiányzó argumentum esetén a program “Adj meg egy file-t!” hibaüzenetet adjon (de mást ne csináljon).
+    Míg nem létezo fájl esetén “Nincs ilyen file!” hibaüzenetet adjon (de mást ne csináljon).
